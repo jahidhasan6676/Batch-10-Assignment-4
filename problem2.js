@@ -1,17 +1,14 @@
 function sendNotification(email) {
-    let sen = 'send your email';
-    let line = email.indexOf('@');
-    if(email.includes(line) === true){
-        line === sen;
+    if(email.includes('@') === false){
+        return 'Invalid Email';
     }
-
-        
-        
     
+    let [userName, domainName] = email.split('@');
+    let massage = userName + ' sent you an email from ' + domainName;
+    return massage;
     
 
-    console.log(email)
 }
 
-const gmail = sendNotification('zihad@gmail.com');
+const gmail = sendNotification('farhan34@yahoo.com');
 console.log(gmail);

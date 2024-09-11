@@ -14,13 +14,7 @@ function  waitingTime(waitingTimes  , serialNumber) {
          
         }
         return isratSerialTimes;
-       
-    
-    
-        
-    
-   
 }
 
-const result = waitingTime([7, 8, 3, 4, 5], 6);
+const result = waitingTime(7, 7);
 console.log(result);

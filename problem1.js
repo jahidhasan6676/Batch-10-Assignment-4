@@ -7,5 +7,5 @@ function calculateTax(income, expenses) {
   return taxAmount;
 }
 
-const total = calculateTax(6000, 8500);
+const total = calculateTax(-12000, -8500);
 console.log(total);

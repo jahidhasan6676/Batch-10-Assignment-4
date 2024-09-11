@@ -7,15 +7,9 @@ function checkDigitsInName(name) {
         if(name.includes(i)){
             return true;
         }
-        
-        
     }
     return false;
-    
-    
-    
-    
 }
 
-const str = checkDigitsInName(['raj']);
+const str = checkDigitsInName('raj');
 console.log(str);

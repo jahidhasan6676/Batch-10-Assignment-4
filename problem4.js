@@ -17,7 +17,7 @@ function calculateFinalScore(obj) {
 
 const details = {
     name: 'Rajib',
-    testScore: 15,
+    testScore: 40,
     schoolGrade: 25,
     isFFamily: true,
 };
