@@ -9,12 +9,12 @@ function  waitingTime(waitingTimes  , serialNumber) {
         sum = sum + times;
          averageTimes = sum / length;
         averageTimes = Math.round(averageTimes);
-         serialNumberRemaining = (serialNumber - 1) - length;
-         isratSerialTimes = averageTimes * serialNumberRemaining;
+         remainingPeople = (serialNumber - 1) - length;
+         totalWaitingTimes = averageTimes * remainingPeople;
          
         }
-        return isratSerialTimes;
+        return totalWaitingTimes;
 }
 
-const result = waitingTime(7, 7);
+const result = waitingTime([ 3, 5, 7, 11, 6 ], 10);
 console.log(result);
